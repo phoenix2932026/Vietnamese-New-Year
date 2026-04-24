@@ -1,0 +1,149 @@
+ /*Phuong's CSS file*/
+/*This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL/kaushan*/
+
+/* Import custom font (Kaushan Script)*/
+@font-face {font-family:'kaushan'; src:url(KaushanScript-Regular.otf); font-weight:normal; font-style: normal;}
+
+/* General style - Apply to the whole webpage  */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding:0;
+    background-color: #fff8e7;
+}
+
+header {
+    text-align: center;
+    background-color: #c62828;
+    color: white;
+    padding: 0px;
+}
+
+/* Use Kaushan font for main headings */
+h1,h2,h3 {font-family:'kaushan', garamond, serif; font-weight:normal;}
+h1 {font-size:200%;} /* Main title */
+h2 {font-size:150%;} /* Subtitle */
+h3 {font-size:150%; color:#8B0000; margin-bottom:0;} /* Section title */
+h4 {font-family:'Time New Roman', garamond, serif; font-weight:normal;} /* description text */
+h4 {font-size:120%;}
+a {color:#8c5900; font-weight:bold; text-decoration:none; padding-bottom:1px;}
+a:visited {color:black;} /* Visited link */
+a:hover, a:focus, a:active {background-color: #fff5e8; color:#8B4513; border-bottom-color:#fdebcf;}
+
+/* navigation bar */
+nav {
+    background-color: #f4c542;
+}
+
+/* Menu list */
+nav ul {list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0; border-right: 2px;
+}
+
+/* Menu links */
+nav a {font-family: kaushan;   display: block;
+    height: 50px;            
+    line-height: 50px;       
+    padding: 10px;         
+    font-size:20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold; }
+
+/* Hover effect for menu */
+nav a:hover {background-color:#FFFACD;}
+
+/* Main container that wraps all page content */
+div#wrapper { 
+    width:100%;  /* Fix text overflow on the right side when printing */
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top:10px;
+    margin-bottom: 10px;
+    background-color: #FAEBD7;
+    background-repeat: repeat-y;
+    background-position:left top;
+    background-attachment:scroll;
+    border: 2px dotted black;
+}
+
+
+/* Title section */
+.title-section {
+    text-align: center;
+    margin-top: 0px;   
+    margin-bottom: 30px;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+/* Paragraph inside title section */
+.title-section h4 {
+    text-align: justify;
+    line-height: 1.6;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* fearture boxes */
+.features { display: flex; justify-content: space-around; margin-left:30px; margin-right:30px;}
+
+.box {text-align: center;}
+
+.box img { width: 300px; height: 200px;}
+
+/* Image gallery layout */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: left;
+}
+
+/* Gallery images */
+.gallery img {
+    width: 290px;           
+    height: 200px;
+    object-fit: cover;      
+    border-radius: 5px;
+}
+
+
+/* Text content area */
+.info {
+    text-align: justify;
+    padding: 0px;
+    margin-top:0;
+    margin-bottom:50px;
+    margin-left:30px;
+    margin-right:50px;}
+
+/* Article list section */
+.articles {
+       margin-left:50px;
+}
+
+/* Bullet list inside articles */
+.articles ul {
+    list-style: disc; margin-left:30px; margin-top:0;}
+
+/* Bottom section of page */
+footer {
+    clear: both;
+    font-family:'kaushan', garamond, serif;
+    text-align: center;
+    background-color: #c62828; /* same as header */
+    color: white;
+    padding: 5px;
+    font-size: 75%;
+    margin-top: 10px; 
+}
+
